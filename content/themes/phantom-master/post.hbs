@@ -1,0 +1,18 @@
+{{!< default}}
+
+{{#post}}
+
+    {{> post-meta}}
+
+    <header class="animated fadeIn" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+        <div class="container" data-stellar-ratio="0.75">
+            {{> title}}
+            {{> sidebar}}
+        </div>
+    </header>
+
+    {{> content}}
+
+    {{!> comments}}
+
+{{/post}}
