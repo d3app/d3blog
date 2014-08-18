@@ -27,7 +27,7 @@ config = {
         // ```
 
         database: {
-            client: 'sqlite3',
+            client: 'pg',
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost-dev.db')
             },
@@ -51,7 +51,7 @@ config = {
         url: 'http://blog.d3jubilee.com',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'pg',
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
@@ -73,7 +73,7 @@ config = {
     testing: {
         url: 'http://127.0.0.1:2369',
         database: {
-            client: 'sqlite3',
+            client: 'pg',
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost-test.db')
             }
